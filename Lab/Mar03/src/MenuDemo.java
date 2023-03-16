@@ -23,7 +23,7 @@ public class MenuDemo {
         mp = new JMenuItem("Mobile Programming");
         np = new JMenuItem("Network Programming");
         
-        menu.add(csit);
+        menu.add(csit);  
         menu.add(bhm);
         menu.add(bim);
         menu.add(bbm);
