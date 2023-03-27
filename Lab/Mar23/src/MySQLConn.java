@@ -10,8 +10,8 @@ public class MySQLConn {
             ResultSet resultSet = stmStatement.executeQuery("select * from bcaSix");
             while (resultSet.next()) {
                 System.out.println(resultSet.getInt(1) + " " +  resultSet.getString(2) + " " + resultSet.getString(3));
-                // conn.close();
             }
+            conn.close();
         } catch (Exception e) {
             System.out.println(e);
         }
