@@ -20,7 +20,7 @@ public class ScrollResultSet {
         System.out.println("Last Record");
         System.out.println(resultSet.getInt(1) + " -> " + resultSet.getString(2));
         resultSet.previous();
-        resultSet.relative(-1);
+        resultSet.relative(-2);
         System.out.println("Last to First Record");
         System.out.println(resultSet.getInt(1) + " -> " + resultSet.getString(2));
         connection.close();
