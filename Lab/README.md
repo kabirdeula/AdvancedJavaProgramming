@@ -1,147 +1,110 @@
 # Lab 
 
-|  S.N. |                                                                                           Topic                                                                                           |  Date  | Status |
-| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- | :----- |
-| 1.    | [Display your Name using Java Swing.](#lab-1)                                                                                                                                             | Mar 28 | Done   |
-| 2.    | [Display Green Line using Java Swing.](#lab-2)                                                                                                                                            | Mar 28 | Done   |
-| 3.    | [Display Red Oval Shape with Yellow fill using Java Swing.](#lab-3)                                                                                                                       | Mar 28 | Done   |
-| 4.    | [WAP to create a dialog box using Java Swing.]()                                                                                                                                                      |        | Done   |
-| 5.    | [WAP to create a Menu and Sub Menu in Java Swing.]()                                                                                                                                                      |        | ToDo   |
-| 6.    | [WAP to illustrate Border Layout.]()                                                                                                                                                       |        | ToDo   |
-| 7.    | [WAP to illustrate Grid Layout.]()                                                                                                        |        | Done   |
-| 8.    | [Write a swing program to add two numbers taken from textbox and display the result in third textbox. The result should be displayed when a user clicks the button.](#lab-8)                                                                                                                 |        | Done   |
-| 9.    | Make a Student Registration Page. Insert data from registration page to database named student.                                                                                                                                  |        | ToDo   |
-| 10.   | Make a Student Listing Page. Retrieve the data from student table and list items.                                                                                                                                  |        | ToDo   |
-| 11.   | Use prepared statements to insert 5 student record in database, modify 3rd record, delete 4th record and display the remaining records in console.                                                                                                                                                               |        | ToDo   |
+|  S.N. | Topic                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |    Date    | Status |
+| :---: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :----- |
+| 1.    | [Write a program to create interface A in this interface we have two method method1 and method2. Implement this interface in another class named MyClass.](#lab-1)                                                                                                                                                                                                                                                                                                                                                                                                         | 2023/04/11 | ToDo   |
+| 2.    | [Write a program for example of multiple catch statements occuring in a program.](#lab-2)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2023/04/11 | ToDo   |
+| 3.    | [Write a program to create a dialogbox and menu.](#lab-3)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2023/04/13 | ToDo   |
+| 4.    | [Write a program that will display checkboxes and option buttons they are numbered from 1 to 10. Use a textbox to display the number those corresponding boxes or button checked.](#lab-4)                                                                                                                                                                                                                                                                                                                                                                                 | 2023/04/13 | ToDo   |
+| 5.    | [Write a program using swing components to add two numbers. Use text fields for inputs and output. Your program should display the result when the user presses a button.](#lab-5)                                                                                                                                                                                                                                                                                                                                                                                         | 2023/04/16 | ToDo   |
+| 6.    | [Write a program to illustrate BorderLayout.](#lab-6)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 2023/04/16 | ToDo   |
+| 7.    | [Write a program to illustrate MouseEvent and MouseListener Interface.](#lab-7)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2023/04/18 | ToDo   |
+| 8.    | [Write a program using JDBC to insert data to database.](#lab-8)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2023/04/18 | ToDo   |
+| 9.    | [Write a program using JDBC to retrieve data from database.](#lab-9)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 2023/04/21 | ToDo   |
+| 10.   | [Write an example of PreparedStatement.](#lab-10)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2023/04/21 | ToDo   |
+| 11.   | [Write an example of RowSet.](#lab-11)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 2023/04/25 | ToDo   |
+| 12.   | [Write a program to illustrate JavaBeans.](#lab-12)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 2023/04/28 | ToDo   |
+| 13.   | [Write a program using Servlet to print Hello. Also write the web.xml file.](#lab-13)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 2023/05/02 | ToDo   |
+| 14.   | [Write a program using Servlet to sum two numbers.](#lab-14)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 2023/05/09 | ToDo   |
+| 15.   | [Write a program using Servlet to set cookies values and get these values.](#lab-15)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 2023/05/12 | ToDo   |
+| 16.   | [Write a JSP program to display contents of data entered from any form.](#lab-16)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2023/05/16 | ToDo   |
+| 17.   | [Write a JSP program to demonstrate exception handling.](#lab-17)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2023/05/30 | ToDo   |
+| 18.   | [Write a JSP program to print "NCCS College" 10 times.](#lab-18)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2023/06/02 | ToDo   |
+| 19.   | [Write a RMI program to subtract between two numbers.](#lab-19)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2023/06/06 | ToDo   |
+| 20.   | [Write a program to design an interface containing fields User ID, Password and Account type, and buttons login, cancel, edit by mixing border layout and flow layout. Add events handling to the button login and cancel such that click in in login checks for matching user id and password in the database and opens another window if login checks for matching user id and password in the database and opens another window if login is successfuk and displays appropriate message if login is not successful. Clicking in cancel terminates our program](#lab-20) | 2023/06/09 | ToDo   |
 
 ## Lab 1
 
 ### Source Code
 
 ```java
-import javax.swing.*;
+interface InterfaceA {
+    void method1();
+    void method2();
+}
 
-public class NameJavaSwing extends JFrame{
-    private JLabel nameLabel;
+public class MyClass implements InterfaceA{
+    @Override
+    public void method1(){
+        System.out.println("Implementing method 1");
+    }
 
-    public NameJavaSwing(){
-        setTitle("Display Name");
-        nameLabel = new JLabel("Kabir Deula");
-        getContentPane().add(nameLabel);
-        setSize(200, 100);
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    @Override
+    public void method2(){
+        System.out.println("Implementing method 2");
     }
 
     public static void main(String[] args) {
-        new NameJavaSwing();
+        MyClass obj = new MyClass();
+        obj.method1();
+        obj.method2();
     }
 }
 ```
 
 ### Output
 
-![Output](./images/1.png)
+```
+Implementing method 1
+Implementing method 2
+```
+
+[Go to Top](#lab)
+
+[Main File](/Lab/20230616/MyClass.java)
 
 ## Lab 2
 
 ### Source Code
 
 ```java
-import javax.swing.*;
-import java.awt.*;
 
-public class GreenLine extends JFrame{
-    public GreenLine(){
-        setTitle("Display Green Line");
-
-        JPanel panel = new JPanel(){
-            @Override
-            protected void paintComponent(Graphics graphics) {
-                super.paintComponent(graphics);
-                graphics.setColor(Color.GREEN);
-                graphics.drawLine(50, 50, 250, 250);
-            }
-        };
-
-        getContentPane().add(panel);
-        setSize(300, 100);
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
-    public static void main(String[] args) {
-        new GreenLine();
-    }
-}
 ```
+
+### Output
+
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 3
 
 ### Source Code
 
 ```java
-import java.awt.*;
-import javax.swing.*;
 
-public class DisplayRedOval {
-    public static void main(String[] args) {
-        // Create a JFrame
-        JFrame frame = new JFrame("Red Oval with Yellow Fill");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // Create a JPanel to draw on
-        JPanel panel = new JPanel() {
-            @Override
-            protected void paintComponent(Graphics g) {
-                super.paintComponent(g);
-                g.setColor(Color.RED);
-                g.fillOval(50, 50, 200, 100);
-                g.setColor(Color.YELLOW);
-                g.fillOval(75, 75, 150, 50);
-            }
-        };
-
-        // Set the preferred size of the JPanel
-        panel.setPreferredSize(new Dimension(300, 200));
-
-        // Add the panel to the JFrame
-        frame.getContentPane().add(panel);
-
-        // Pack the JFrame and make it visible
-        frame.pack();
-        frame.setVisible(true);
-    }
-}
 ```
 
 ### Output
 
-![Output](./images/3.png)
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 4
 
 ### Source Code
 
 ```java
-import javax.swing.*;
 
-public class DialogBox {
-    JFrame frame;
-
-    public DialogBox(){
-        frame = new JFrame("Dialog Box");
-        JOptionPane.showMessageDialog(frame, "Hello World!");
-    }
-
-    public static void main(String[] args) {
-        new DialogBox();
-    }
-}
 ```
 
 ### Output
 
-![Output](./images/4.png)
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 5
 
@@ -153,8 +116,9 @@ public class DialogBox {
 
 ### Output
 
-```
-```
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 6
 
@@ -166,8 +130,9 @@ public class DialogBox {
 
 ### Output
 
-```
-```
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 7
 
@@ -178,8 +143,9 @@ public class DialogBox {
 
 ### Output
 
-```
-```
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 8
 
@@ -190,8 +156,9 @@ public class DialogBox {
 
 ### Output
 
-```
-```
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 12
 
@@ -203,8 +170,9 @@ public class DialogBox {
 
 ### Output
 
-```
-```
+[Go to Top](#lab)
+
+[Main File](/Lab/)
 
 ## Lab 13
 
@@ -216,5 +184,104 @@ public class DialogBox {
 
 ### Output
 
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 14
+
+### Source Code
+
+```java
+
 ```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 15
+
+### Source Code
+
+```java
+
 ```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 16
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 17
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 18
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 19
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 20
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
