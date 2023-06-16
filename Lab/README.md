@@ -444,7 +444,7 @@ public class MouseEventDemo implements MouseListener {
 ```java
 import java.sql.*;
 
-public class InsertRecords {
+public class InsertDataDemo {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -453,7 +453,6 @@ public class InsertRecords {
             Statement statement = connection.createStatement();
 
             statement.executeUpdate("INSERT INTO bcaSix VALUES (6, 'Chiran Rai', 'Dallu'),(7, 'Kabir Deula', 'Chetrapati'), (8, 'Kabita Phuyal', 'Pepsicola'), (9, 'Kiran Manandhar', 'Basantapur'), (10, 'Manish Pandey', 'Godawari')");
-            // statement.executeUpdate("INSERT INTO bcaSix(id, name, address) VALUES ('Chiran Rai', 'Dallu')");
             connection.close();
         } catch (Exception e) {
             System.err.println("Got an exception");
@@ -529,7 +528,7 @@ Grade: B
 ```java
 import java.sql.*;
 
-public class InsertDataDemo {
+public class PreparedStatementDemo {
     public static void main(String[] args) {
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/nccs", "java", "lunala");
@@ -569,21 +568,56 @@ Data Inserted Successfully.
 
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/20230616/PreparedStatementDemo.java)
 
 ## Lab 11
 
 ### Source Code
 
 ```java
+import java.sql.*;
+import javax.sql.rowset.JdbcRowSet;
+import javax.sql.rowset.RowSetProvider;
 
+public class RowSetDemo {
+    public static void main(String[] args) throws SQLException {
+
+        JdbcRowSet rowSet = RowSetProvider.newFactory().createJdbcRowSet();
+
+        rowSet.setUrl("jdbc:mysql://localhost:3306/nccs");
+        rowSet.setUsername("java");
+        rowSet.setPassword("lunala");
+
+        rowSet.setCommand("SELECT * FROM students");
+        rowSet.execute();
+
+        while (rowSet.next()) {
+            System.out.println("ID: " + rowSet.getInt("id") + "\nName: " + rowSet.getString("name") + "\nAge: " + rowSet.getInt("age") + "\nGrade: " + rowSet.getString("grade"));
+            System.out.println("-------------------------");
+        }
+        rowSet.close();
+    }
+}
 ```
 
 ### Output
 
+```
+ID: 1
+Name: Aayush Manandhar
+Age: 20
+Grade: A
+-------------------------
+ID: 2
+Name: Bhuwan Singh
+Age: 20
+Grade: B
+-------------------------
+```
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/20230616/RowSetDemo.java)
 
 ## Lab 12
 
