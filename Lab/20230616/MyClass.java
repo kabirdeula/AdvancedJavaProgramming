@@ -1,16 +1,17 @@
 interface InterfaceA {
     void method1();
+
     void method2();
 }
 
-public class MyClass implements InterfaceA{
+public class MyClass implements InterfaceA {
     @Override
-    public void method1(){
+    public void method1() {
         System.out.println("Implementing method 1");
     }
 
     @Override
-    public void method2(){
+    public void method2() {
         System.out.println("Implementing method 2");
     }
 
