@@ -343,14 +343,38 @@ public class SwingSum {
 ### Source Code
 
 ```java
+import javax.swing.*;
+import java.awt.*;
 
+public class BorderLayoutDemo {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Border Layout Demo");
+        frame.setSize(400, 300);
+
+        JButton eastButton = new JButton("East");
+        JButton westButton = new JButton("West");
+        JButton northButton = new JButton("North");
+        JButton southButton = new JButton("South");
+        JButton centerButton = new JButton("Center");
+        
+        frame.add(eastButton, BorderLayout.EAST);
+        frame.add(northButton, BorderLayout.NORTH);
+        frame.add(centerButton, BorderLayout.CENTER);
+        frame.add(westButton, BorderLayout.WEST);
+        frame.add(southButton, BorderLayout.SOUTH);
+
+        frame.setVisible(true);
+    }
+}
 ```
 
 ### Output
 
+![Output](./images/06.png)
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/20230616/BorderLayoutDemo.java)
 
 ## Lab 7
 
@@ -367,6 +391,48 @@ public class SwingSum {
 [Main File](/Lab/)
 
 ## Lab 8
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 9
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 10
+
+### Source Code
+
+```java
+
+```
+
+### Output
+
+[Go to Top](#lab)
+
+[Main File](/Lab/)
+
+## Lab 11
 
 ### Source Code
 
