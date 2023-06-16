@@ -11,6 +11,10 @@ public class InsertDataDemo {
             statement.setInt(2, 20);
             statement.setString(3, "A");
 
+            statement.setString(1, "Bhuwan Singh");
+            statement.setInt(2, 20);
+            statement.setString(3, "B");
+
             int rowsAffected = statement.executeUpdate();
 
             if(rowsAffected > 0){
