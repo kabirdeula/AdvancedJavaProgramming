@@ -21,7 +21,7 @@
 | 17.  | [Write a JSP program to demonstrate exception handling.](#lab-17)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2023/05/30 | ToDo   |
 | 18.  | [Write a JSP program to print "NCCS College" 10 times.](#lab-18)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2023/06/02 | ToDo   |
 | 19.  | [Write a RMI program to subtract between two numbers.](#lab-19)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2023/06/06 | ToDo   |
-| 20.  | [Write a program to design an interface containing fields User ID, Password and Account type, and buttons login, cancel, edit by mixing border layout and flow layout. Add events handling to the button login and cancel such that click in in login checks for matching user id and password in the database and opens another window if login checks for matching user id and password in the database and opens another window if login is successfuk and displays appropriate message if login is not successful. Clicking in cancel terminates our program](#lab-20) | 2023/06/09 | ToDo   |
+| 20.  | [Write a program to design an interface containing fields User ID, Password and Account type, and buttons login, cancel, edit by mixing border layout and flow layout. Add events handling to the button login and cancel such that click in in login checks for matching user id and password in the database and opens another window if login checks for matching user id and password in the database and opens another window if login is successful and displays appropriate message if login is not successful. Clicking in cancel terminates our program](#lab-20) | 2023/06/09 | ToDo   |
 
 ## Lab 1
 
@@ -1019,15 +1019,83 @@ index.jsp
 
 ### Source Code
 
+SubtractService.java
 ```java
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
+public interface SubtractService extends Remote {
+    int subtract(int a, int b) throws RemoteException;
+}
+```
+
+SubtractServiceImplementation.java
+```java
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class SubtractServiceImplementation extends UnicastRemoteObject implements SubtractService{
+    public SubtractServiceImplementation() throws RemoteException{
+        super();
+    }
+
+    @Override
+    public int subtract(int a, int b) throws RemoteException{
+        return a - b;
+    }
+}
+```
+
+SubtractServer.java
+```java
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class SubtractServer {
+    public static void main(String[] args) {
+        try {
+            SubtractService service = new SubtractServiceImplementation();
+            Registry registry = LocateRegistry.createRegistry(1089);
+            registry.bind("SubtractService", service);
+            System.out.println("Server Started!");
+        } catch (Exception e) {
+            System.err.println("Server exception: " + e.toString());   
+        }
+    }
+}
+```
+
+SubtractClient.java
+```java
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class SubtractClient {
+    public static void main(String[] args) {
+        try {
+            Registry registry = LocateRegistry.getRegistry("localhost", 1089);
+            SubtractService service = (SubtractService) registry.lookup("SubtractService");
+
+            int a = 10;
+            int b = 5;
+            int result = service.subtract(a, b);
+            System.out.println("Subtraction result: " + result);
+        } catch (Exception e) {
+            System.err.println("Client exception: " + e.toString());
+        }
+    }
+}
 ```
 
 ### Output
 
+```
+Subtraction result: 5
+```
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/20230620/)
 
 ## Lab 20
 
