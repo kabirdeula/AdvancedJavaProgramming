@@ -692,15 +692,51 @@ Age: 22
 
 ### Source Code
 
+HelloServlet.java
 ```java
+import java.io.*;
 
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class HelloServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.println("<html><head><title>Hello Servlet</title></head><body>");
+        out.println("<h1>Hello</h1>");
+        out.println("</body></html>");
+    }
+}
+```
+
+web.xml
+```xml
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Hello Servlet</display-name>
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+</web-app>
 ```
 
 ### Output
 
+![Output](/Lab/images/13.png)
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/lab13/src/main/)
 
 ## Lab 14
 
