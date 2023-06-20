@@ -883,15 +883,61 @@ web.xml
 
 ### Source Code
 
-```java
+index.jsp
+```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Display</title>
+</head>
+<body>
+    <h1>Form Data Display</h1>
+    <form action="display.jsp" method="post">
 
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br/>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br/>
+        
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="40" rows="5"></textarea><br/>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+```
+
+display.jsp
+```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Display</title>
+</head>
+<body>
+    <h1>Form Data Display</h1>
+    <p><strong>Name:</strong> <%= request.getParameter("name") %></p>
+    <p><strong>Email:</strong> <%= request.getParameter("email") %></p>
+    <p><strong>Message:</strong> <%= request.getParameter("message") %></p>
+</body>
+</html>
 ```
 
 ### Output
 
+![Output1](/Lab/images/1601.png)
+![Output2](/Lab/images/1602.png)
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/lab16/src/main/webapp/)
 
 ## Lab 17
 
