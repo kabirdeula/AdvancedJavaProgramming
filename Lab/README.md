@@ -2,18 +2,18 @@
 
 | S.N. | Topic                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Date       | Status |
 | :--: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :----- |
-|  1.  | [Write a program to create interface A in this interface we have two method method1 and method2. Implement this interface in another class named MyClass.](#lab-1)                                                                                                                                                                                                                                                                                                                                                                                                         | 2023/04/11 | ToDo   |
-|  2.  | [Write a program for example of multiple catch statements occuring in a program.](#lab-2)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2023/04/11 | ToDo   |
-|  3.  | [Write a program to create a dialogbox and menu.](#lab-3)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2023/04/13 | ToDo   |
-|  4.  | [Write a program that will display checkboxes and option buttons they are numbered from 1 to 10. Use a textbox to display the number those corresponding boxes or button checked.](#lab-4)                                                                                                                                                                                                                                                                                                                                                                                 | 2023/04/13 | ToDo   |
-|  5.  | [Write a program using swing components to add two numbers. Use text fields for inputs and output. Your program should display the result when the user presses a button.](#lab-5)                                                                                                                                                                                                                                                                                                                                                                                         | 2023/04/16 | ToDo   |
-|  6.  | [Write a program to illustrate BorderLayout.](#lab-6)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 2023/04/16 | ToDo   |
-|  7.  | [Write a program to illustrate MouseEvent and MouseListener Interface.](#lab-7)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2023/04/18 | ToDo   |
-|  8.  | [Write a program using JDBC to insert data to database.](#lab-8)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2023/04/18 | ToDo   |
-|  9.  | [Write a program using JDBC to retrieve data from database.](#lab-9)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 2023/04/21 | ToDo   |
-| 10.  | [Write an example of PreparedStatement.](#lab-10)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2023/04/21 | ToDo   |
-| 11.  | [Write an example of RowSet.](#lab-11)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 2023/04/25 | ToDo   |
-| 12.  | [Write a program to illustrate JavaBeans.](#lab-12)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 2023/04/28 | ToDo   |
+|  1.  | [Write a program to create interface A in this interface we have two method method1 and method2. Implement this interface in another class named MyClass.](#lab-1)                                                                                                                                                                                                                                                                                                                                                                                                         | 2023/04/11 | Done   |
+|  2.  | [Write a program for example of multiple catch statements occuring in a program.](#lab-2)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2023/04/11 | Done   |
+|  3.  | [Write a program to create a dialogbox and menu.](#lab-3)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | 2023/04/13 | Done   |
+|  4.  | [Write a program that will display checkboxes and option buttons they are numbered from 1 to 10. Use a textbox to display the number those corresponding boxes or button checked.](#lab-4)                                                                                                                                                                                                                                                                                                                                                                                 | 2023/04/13 | Done   |
+|  5.  | [Write a program using swing components to add two numbers. Use text fields for inputs and output. Your program should display the result when the user presses a button.](#lab-5)                                                                                                                                                                                                                                                                                                                                                                                         | 2023/04/16 | Done   |
+|  6.  | [Write a program to illustrate BorderLayout.](#lab-6)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 2023/04/16 | Done   |
+|  7.  | [Write a program to illustrate MouseEvent and MouseListener Interface.](#lab-7)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 2023/04/18 | Done   |
+|  8.  | [Write a program using JDBC to insert data to database.](#lab-8)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | 2023/04/18 | Done   |
+|  9.  | [Write a program using JDBC to retrieve data from database.](#lab-9)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 2023/04/21 | Done   |
+| 10.  | [Write an example of PreparedStatement.](#lab-10)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | 2023/04/21 | Done   |
+| 11.  | [Write an example of RowSet.](#lab-11)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | 2023/04/25 | Done   |
+| 12.  | [Write a program to illustrate JavaBeans.](#lab-12)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | 2023/04/28 | Done   |
 | 13.  | [Write a program using Servlet to print Hello. Also write the web.xml file.](#lab-13)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | 2023/05/02 | ToDo   |
 | 14.  | [Write a program using Servlet to sum two numbers.](#lab-14)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | 2023/05/09 | ToDo   |
 | 15.  | [Write a program using Servlet to set cookies values and get these values.](#lab-15)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | 2023/05/12 | ToDo   |
@@ -370,7 +370,7 @@ public class BorderLayoutDemo {
 
 ### Output
 
-![Output](./images/06.png)
+![Output](./images/0600.png)
 
 [Go to Top](#lab)
 
@@ -732,7 +732,7 @@ web.xml
 
 ### Output
 
-![Output](/Lab/images/13.png)
+![Output](/Lab/images/1300.png)
 
 [Go to Top](#lab)
 
@@ -742,21 +742,83 @@ web.xml
 
 ### Source Code
 
+SumServlet.java
 ```java
+import java.io.*;
 
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class SumServlet extends HttpServlet{
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        response.setContentType("text/html");
+
+        PrintWriter out = response.getWriter();
+        out.println("<html><head><title>Sum</title><body>");
+        out.println("<h1>Sum of Two Numbers</h1>");
+
+        String number1 = request.getParameter("number1");
+        String number2 = request.getParameter("number2");
+
+        int sum = 0;
+        try {
+            int num1 = Integer.parseInt(number1);
+            int num2 = Integer.parseInt(number2);
+            sum = num1 + num2;
+
+            out.println("<p>Number 1: " + num1 + "</p>");
+            out.println("<p>Number 2: " + num2 + "</p>");
+            out.println("<p>Sum: " + sum + "</p>");
+        } catch (NumberFormatException e) {
+            out.println("<p>Error: Invalid input!</p>");
+        }
+
+        out.println("</body></html>");
+        out.close();
+    }
+}
+
+```
+
+web.xml
+```xml
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>SumServlet</display-name>
+  <servlet>
+        <servlet-name>SumServlet</servlet-name>
+        <servlet-class>SumServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SumServlet</servlet-name>
+        <url-pattern>/sum</url-pattern>
+    </servlet-mapping>
+</web-app>
 ```
 
 ### Output
 
+![Output1](/Lab/images/1401.png)
+![Output2](/Lab/images/1402.png)
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/lab14/src/main/)
 
 ## Lab 15
 
 ### Source Code
 
+.java
 ```java
+
+```
+
+web.xml
+```xml
 
 ```
 
