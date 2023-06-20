@@ -812,21 +812,72 @@ web.xml
 
 ### Source Code
 
-.java
+CookieServlet.java
 ```java
+import java.io.IOException;
+import java.io.PrintWriter;
 
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class CookieServlet extends HttpServlet{
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        response.setContentType("text/html");
+
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<h2>Cookie Example</h2>");
+
+        Cookie[] cookies = request.getCookies();
+
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                String name = cookie.getName();
+                String value = cookie.getValue();
+                out.println("<p>Cookie Name: " + name + "</p><p>Value: " + value + "</p>");
+            }
+        }
+
+        Cookie cookie1 = new Cookie("username", "kabirdeula");
+        cookie1.setMaxAge(24 * 60 * 60);
+        response.addCookie(cookie1);
+        
+        Cookie cookie2 = new Cookie("language", "java");
+        cookie2.setMaxAge(24 * 60 * 60);
+        response.addCookie(cookie2);
+        
+        out.println("<p>Cookies have been set.</p></body></html>");
+        out.close();
+    }
+}
 ```
 
 web.xml
 ```xml
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
+<web-app>
+  <display-name>Servlet Cookies</display-name>
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+</web-app>
 ```
 
 ### Output
 
+![Output](/Lab/images/1500.png)
+
 [Go to Top](#lab)
 
-[Main File](/Lab/)
+[Main File](/Lab/lab15/src/main/)
 
 ## Lab 16
 
