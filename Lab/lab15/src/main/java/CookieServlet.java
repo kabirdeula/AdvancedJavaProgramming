@@ -22,7 +22,7 @@ public class CookieServlet extends HttpServlet{
             }
         }
 
-        Cookie cookie1 = new Cookie("username", "kabirdeula");
+        Cookie cookie1 = new Cookie("username", "msanisha");
         cookie1.setMaxAge(24 * 60 * 60);
         response.addCookie(cookie1);
         

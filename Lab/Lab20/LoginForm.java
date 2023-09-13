@@ -75,7 +75,10 @@ public class LoginForm {
             boolean isValid = false;
 
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/nccs", "java", "lunala");
+                String url = "jdbc:mysql://localhost:3306/nccs?transactionIsolation=READ_COMMITTED";
+                connection = DriverManager.getConnection(url, "java", "lunala");
+
+                // connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/nccs", "java", "lunala");
                 String query = "SELECT * FROM users WHERE username = ? AND password = ? AND account_type = ?";
                 statement = connection.prepareStatement(query);
                 statement.setString(1, username);
